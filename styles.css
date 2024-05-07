@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+body {
+    background-color: #0a0a23;
+    font-family: "Outfit";
+  }
+  
+  #text {
+    background-color: #0a0a23;
+    color: #ffffff;
+    padding: 12px;
+    font-size: max(1vw,16px);
+  }
+  
+  #game {
+    max-width: 800px;
+    min-width: 280px;
+    max-height: 400px;
+    background-color: #ffffff;
+    color: #ffffff;
+    margin: 30px auto 0px;
+    padding: 10px;
+    resize: vertical;
+  }
+  
+  #controls,
+  #stats {
+    border: 1px solid #0a0a23;
+    padding: 12px;
+    color: #0a0a23;
+    
+  }
+  #controls{
+    display: flex;
+    gap: 16px;
+  }
+  
+  #monsterStats {
+    display: none;
+    border: 1px solid #0a0a23;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #c70d0d;
+  }
+  
+  .stat {
+    padding-right: 10px;
+    font-size: max(1vw,16px);
+  }
+  
+  button {
+    cursor: pointer;
+    color: #0a0a23;
+    background-color: #feac32;
+    font-weight: 500;
+    font-size: max(1vw,16px);
+    border: 3px solid #feac32;
+    padding: 8px;
+  }
+  button:hover{
+    background-color: hsl(36, 99%, 50%);
+    border: 3px solid   hsl(36, 99%, 50%)
+  }
+
+  @media (max-width:600px){
+    #controls{
+    flex-direction: column;
+  }
+  }
